@@ -1,0 +1,24 @@
+{
+  "name": "projectsite",
+  "version": "1.0.0",
+  "description": "projectsite",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fgsoftware1/projectsite.git"
+  },
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
+  "author": "Gabriel Aguiar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fgsoftware1/projectsite/issues"
+  },
+  "homepage": "https://github.com/fgsoftware1/projectsite#readme"
+}
+
