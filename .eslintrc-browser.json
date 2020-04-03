@@ -1,0 +1,21 @@
+ 
+{
+	"root": true,
+
+	"extends": "jquery",
+
+	"parserOptions": {
+		"ecmaVersion": 5
+	},
+
+	"env": {},
+
+	"globals": {
+		"window": true
+	},
+
+	"rules": {
+		"one-var": ["error", {"var": "always"}],
+		"strict": ["error", "function"]
+	}
+}

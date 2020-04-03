@@ -1,0 +1,13 @@
+{
+	"root": true,
+
+    "extends": "./.eslintrc-node.json",
+
+	"overrides": [
+		{
+			"parserOptions": {
+				"sourceType": "module"
+			}
+		}
+	]
+}
