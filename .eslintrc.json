@@ -1,7 +1,12 @@
 {
 	"root": true,
 
-    "extends": "./.eslintrc-node.json",
+	"extends": "./.eslintrc-node.json",
+	"extends": ["prettier"],
+	
+	"plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": "error",
 
 	"overrides": [
 		{
@@ -10,4 +15,5 @@
 			}
 		}
 	]
+}
 }

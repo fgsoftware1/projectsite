@@ -1,123 +1,94 @@
 0 info it worked if it ends with ok
-1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install', '-g', 'bower' ]
+1 verbose cli [ '/usr/bin/node',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--save-dev',
+1 verbose cli   '--save-exact',
+1 verbose cli   'prettier' ]
 2 info using npm@3.5.2
 3 info using node@v8.10.0
 4 silly loadCurrentTree Starting
 5 silly install loadCurrentTree
-6 silly install readGlobalPackageData
-7 silly fetchPackageMetaData bower
-8 silly fetchNamedPackageData bower
-9 silly mapToRegistry name bower
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData prettier
+8 silly fetchNamedPackageData prettier
+9 silly mapToRegistry name prettier
 10 silly mapToRegistry using default registry
-11 silly mapToRegistry registry https://registry.npmjs.org/
-12 silly mapToRegistry uri https://registry.npmjs.org/bower
-13 verbose request uri https://registry.npmjs.org/bower
+11 silly mapToRegistry registry https://npm.pkg.github.com/fgsoftware1
+12 silly mapToRegistry uri https://npm.pkg.github.com/fgsoftware1/prettier
+13 verbose request uri https://npm.pkg.github.com/fgsoftware1/prettier
 14 verbose request no auth needed
-15 info attempt registry request try #1 at 11:07:15 AM
-16 verbose request id 4bb40c304f1b093c
-17 verbose etag W/"9122b253783e008329de203973e1dab5"
-18 verbose lastModified Sat, 07 Dec 2019 11:25:17 GMT
-19 http request GET https://registry.npmjs.org/bower
-20 http 304 https://registry.npmjs.org/bower
-21 verbose headers { date: 'Fri, 03 Apr 2020 09:07:27 GMT',
-21 verbose headers   connection: 'keep-alive',
-21 verbose headers   'set-cookie':
-21 verbose headers    [ '__cfduid=dbba11d55ba68c9d8a52d948e06e4228e1585904847; expires=Sun, 03-May-20 09:07:27 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
-21 verbose headers   'cf-ray': '57e1a3ae0e4ada86-LIS',
-21 verbose headers   age: '2793',
-21 verbose headers   'cache-control': 'public, max-age=300',
-21 verbose headers   etag: '"9122b253783e008329de203973e1dab5"',
-21 verbose headers   'last-modified': 'Sat, 07 Dec 2019 11:25:17 GMT',
-21 verbose headers   vary: 'Accept-Encoding',
-21 verbose headers   'cf-cache-status': 'HIT',
-21 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
-21 verbose headers   server: 'cloudflare' }
-22 silly get cb [ 304,
-22 silly get   { date: 'Fri, 03 Apr 2020 09:07:27 GMT',
-22 silly get     connection: 'keep-alive',
-22 silly get     'set-cookie':
-22 silly get      [ '__cfduid=dbba11d55ba68c9d8a52d948e06e4228e1585904847; expires=Sun, 03-May-20 09:07:27 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
-22 silly get     'cf-ray': '57e1a3ae0e4ada86-LIS',
-22 silly get     age: '2793',
-22 silly get     'cache-control': 'public, max-age=300',
-22 silly get     etag: '"9122b253783e008329de203973e1dab5"',
-22 silly get     'last-modified': 'Sat, 07 Dec 2019 11:25:17 GMT',
-22 silly get     vary: 'Accept-Encoding',
-22 silly get     'cf-cache-status': 'HIT',
-22 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
-22 silly get     server: 'cloudflare' } ]
-23 verbose etag https://registry.npmjs.org/bower from cache
-24 verbose get saving bower to /home/fgygh/.npm/registry.npmjs.org/bower/.cache.json
-25 silly install normalizeTree
-26 silly loadCurrentTree Finishing
-27 silly loadIdealTree Starting
-28 silly install loadIdealTree
-29 silly cloneCurrentTree Starting
-30 silly install cloneCurrentTreeToIdealTree
-31 silly cloneCurrentTree Finishing
-32 silly loadShrinkwrap Starting
-33 silly install loadShrinkwrap
-34 silly loadShrinkwrap Finishing
-35 silly loadAllDepsIntoIdealTree Starting
-36 silly install loadAllDepsIntoIdealTree
-37 silly resolveWithNewModule bower@1.8.8 checking installable status
-38 silly cache add args [ 'bower', null ]
-39 verbose cache add spec bower
-40 silly cache add parsed spec Result {
-40 silly cache add   raw: 'bower',
-40 silly cache add   scope: null,
-40 silly cache add   name: 'bower',
-40 silly cache add   rawSpec: '',
-40 silly cache add   spec: 'latest',
-40 silly cache add   type: 'tag' }
-41 silly addNamed bower@latest
-42 verbose addNamed "latest" is being treated as a dist-tag for bower
-43 info addNameTag [ 'bower', 'latest' ]
-44 silly mapToRegistry name bower
-45 silly mapToRegistry using default registry
-46 silly mapToRegistry registry https://registry.npmjs.org/
-47 silly mapToRegistry uri https://registry.npmjs.org/bower
-48 verbose addNameTag registry:https://registry.npmjs.org/bower not in flight; fetching
-49 verbose get https://registry.npmjs.org/bower not expired, no request
-50 silly addNameTag next cb for bower with tag latest
-51 silly addNamed bower@1.8.8
-52 verbose addNamed "1.8.8" is a plain semver version for bower
-53 warn deprecated bower@1.8.8: We don't recommend using Bower for new projects. Please consider Yarn and Webpack or Parcel. You can read how to migrate legacy project here: https://bower.io/blog/2017/how-to-migrate-away-from-bower/
-54 silly cache afterAdd bower@1.8.8
-55 verbose afterAdd /home/fgygh/.npm/bower/1.8.8/package/package.json not in flight; writing
-56 verbose afterAdd /home/fgygh/.npm/bower/1.8.8/package/package.json written
-57 silly loadAllDepsIntoIdealTree Finishing
-58 silly idealTree:prePrune lib
-58 silly idealTree:prePrune └── bower@1.8.8
-59 silly loadIdealTree Finishing
-60 silly currentTree lib
-60 silly currentTree └── bower@1.8.8
-61 silly idealTree lib
-61 silly idealTree └── bower@1.8.8
-62 silly generateActionsToTake Starting
-63 silly install generateActionsToTake
-64 warn checkPermissions Missing write access to /usr/local/lib/node_modules/bower
-65 warn checkPermissions Missing write access to /usr/local/lib/node_modules
-66 silly rollbackFailedOptional Starting
-67 silly rollbackFailedOptional Finishing
-68 silly runTopLevelLifecycles Starting
-69 silly runTopLevelLifecycles Finishing
-70 silly install printInstalled
-71 verbose stack Error: EACCES: permission denied, access '/usr/local/lib/node_modules/bower'
-72 verbose cwd /home/fgygh/projectsite
-73 error Linux 5.3.0-45-generic
-74 error argv "/usr/bin/node" "/usr/bin/npm" "install" "-g" "bower"
-75 error node v8.10.0
-76 error npm  v3.5.2
-77 error path /usr/local/lib/node_modules/bower
-78 error code EACCES
-79 error errno -13
-80 error syscall access
-81 error Error: EACCES: permission denied, access '/usr/local/lib/node_modules/bower'
-81 error  { Error: EACCES: permission denied, access '/usr/local/lib/node_modules/bower'
-81 error   errno: -13,
-81 error   code: 'EACCES',
-81 error   syscall: 'access',
-81 error   path: '/usr/local/lib/node_modules/bower' }
-82 error Please try running this command again as root/Administrator.
-83 verbose exit [ -13, true ]
+15 info attempt registry request try #1 at 12:24:18 PM
+16 verbose request id e4197072f9048429
+17 http request GET https://npm.pkg.github.com/fgsoftware1/prettier
+18 http 401 https://npm.pkg.github.com/fgsoftware1/prettier
+19 verbose headers { date: 'Fri, 03 Apr 2020 10:24:22 GMT',
+19 verbose headers   'content-length': '0',
+19 verbose headers   'content-security-policy': 'default-src \'none\';',
+19 verbose headers   server: 'GitHub Registry',
+19 verbose headers   'strict-transport-security': 'max-age=31536000;',
+19 verbose headers   'www-authenticate': 'Basic realm="GitHub Package Registry"',
+19 verbose headers   'x-content-type-options': 'nosniff',
+19 verbose headers   'x-frame-options': 'DENY',
+19 verbose headers   'x-xss-protection': '1; mode=block',
+19 verbose headers   'x-github-request-id': 'DFE8:3167:23442:73BC8:5E870ED5' }
+20 silly get cb [ 401,
+20 silly get   { date: 'Fri, 03 Apr 2020 10:24:22 GMT',
+20 silly get     'content-length': '0',
+20 silly get     'content-security-policy': 'default-src \'none\';',
+20 silly get     server: 'GitHub Registry',
+20 silly get     'strict-transport-security': 'max-age=31536000;',
+20 silly get     'www-authenticate': 'Basic realm="GitHub Package Registry"',
+20 silly get     'x-content-type-options': 'nosniff',
+20 silly get     'x-frame-options': 'DENY',
+20 silly get     'x-xss-protection': '1; mode=block',
+20 silly get     'x-github-request-id': 'DFE8:3167:23442:73BC8:5E870ED5' } ]
+21 silly fetchPackageMetaData Error: 401 Unauthorized
+21 silly fetchPackageMetaData     at makeError (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+21 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:215:9)
+21 silly fetchPackageMetaData     at Request._callback (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+21 silly fetchPackageMetaData     at Request.self.callback (/usr/share/npm/node_modules/request/request.js:198:22)
+21 silly fetchPackageMetaData     at emitTwo (events.js:126:13)
+21 silly fetchPackageMetaData     at Request.emit (events.js:214:7)
+21 silly fetchPackageMetaData     at Request.<anonymous> (/usr/share/npm/node_modules/request/request.js:1082:10)
+21 silly fetchPackageMetaData     at emitOne (events.js:121:20)
+21 silly fetchPackageMetaData     at Request.emit (events.js:211:7)
+21 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (/usr/share/npm/node_modules/request/request.js:1009:12)
+21 silly fetchPackageMetaData  error for prettier { Error: 401 Unauthorized
+21 silly fetchPackageMetaData     at makeError (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+21 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:215:9)
+21 silly fetchPackageMetaData     at Request._callback (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+21 silly fetchPackageMetaData     at Request.self.callback (/usr/share/npm/node_modules/request/request.js:198:22)
+21 silly fetchPackageMetaData     at emitTwo (events.js:126:13)
+21 silly fetchPackageMetaData     at Request.emit (events.js:214:7)
+21 silly fetchPackageMetaData     at Request.<anonymous> (/usr/share/npm/node_modules/request/request.js:1082:10)
+21 silly fetchPackageMetaData     at emitOne (events.js:121:20)
+21 silly fetchPackageMetaData     at Request.emit (events.js:211:7)
+21 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (/usr/share/npm/node_modules/request/request.js:1009:12) statusCode: 401, code: 'E401' }
+22 silly rollbackFailedOptional Starting
+23 silly rollbackFailedOptional Finishing
+24 silly runTopLevelLifecycles Starting
+25 silly runTopLevelLifecycles Finishing
+26 silly install printInstalled
+27 verbose stack Error: 401 Unauthorized
+27 verbose stack     at makeError (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+27 verbose stack     at CachingRegistryClient.<anonymous> (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:215:9)
+27 verbose stack     at Request._callback (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+27 verbose stack     at Request.self.callback (/usr/share/npm/node_modules/request/request.js:198:22)
+27 verbose stack     at emitTwo (events.js:126:13)
+27 verbose stack     at Request.emit (events.js:214:7)
+27 verbose stack     at Request.<anonymous> (/usr/share/npm/node_modules/request/request.js:1082:10)
+27 verbose stack     at emitOne (events.js:121:20)
+27 verbose stack     at Request.emit (events.js:211:7)
+27 verbose stack     at IncomingMessage.<anonymous> (/usr/share/npm/node_modules/request/request.js:1009:12)
+28 verbose statusCode 401
+29 verbose cwd /home/fgygh/projectsite
+30 error Linux 5.3.0-45-generic
+31 error argv "/usr/bin/node" "/usr/bin/npm" "install" "--save-dev" "--save-exact" "prettier"
+32 error node v8.10.0
+33 error npm  v3.5.2
+34 error code E401
+35 error 401 Unauthorized
+36 error If you need help, you may report this error at:
+36 error     <https://github.com/npm/npm/issues>
+37 verbose exit [ 1, true ]
